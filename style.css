@@ -45,7 +45,6 @@ body {
 
 header {
   width: 100%;
-  height: 100vh;
   background: rgb(35, 56, 49);
   background: linear-gradient(
     0deg,
@@ -60,17 +59,25 @@ nav {
   gap: 2rem;
   height: 100px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 nav ul {
   height: 58px;
-  width: 538px;
+  width: auto;
+  gap: 2rem;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #233831;
-  margin-top: 20px;
+  background: #23383184;
   backdrop-filter: blur(50px);
+  margin-top: 20px;
   border-radius: 50px;
+  padding: 10px 20px;
 }
 
 nav ul li a {
@@ -89,18 +96,19 @@ nav ul li a {
   border-radius: 50px;
 }
 
-.header{
+.header {
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   flex-direction: column;
 }
-.header p{
-width: 40%;
+.header p {
+  width: 40%;
 }
 
-.hero{
+.hero {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -112,12 +120,86 @@ width: 40%;
   font-size: 80px;
   text-align: center;
 }
-.hero-img1{
+.hero-img1 {
   display: flex;
   align-items: end;
 }
-.hero-img2{
+.hero-img2 {
   padding-top: 90px;
   display: flex;
   align-items: start;
+}
+
+.projects {
+  padding: 10px 50px;
+  display: flex;
+  gap: 58px;
+  margin-bottom: 100px;
+}
+.project-1 {
+  width: 525px;
+  padding: 20px;
+  height: 550px;
+  background-color: #d194e4;
+  border-radius: 64px;
+  overflow: hidden;
+  position: relative;
+}
+.project-1:hover,
+.project-2:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+}
+
+.project-1 img,
+.project-2 img {
+  position: absolute;
+  top: 160px;
+  left: 70px;
+}
+.project-2 {
+  width: 875px;
+  height: 550px;
+  background-color: #a2ddd4;
+  border-radius: 64px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+.project-title {
+  text-align: start;
+  position: absolute;
+  right: 70px;
+  top: 50px;
+}
+.project-title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #364442;
+  text-align: end;
+}
+.project-title p {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  color: #364442;
+  text-align: end;
+}
+
+.inprogress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+}
+#inprogress{
+  font-size: 115px;
+  font-weight: bold;
+  text-align: center;
+}
+.inprogress p {
+  width: 40%;
 }
