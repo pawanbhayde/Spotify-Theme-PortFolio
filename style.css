@@ -153,8 +153,10 @@ nav ul li a {
 }
 
 .projects {
+  width: 100%;
   padding: 10px 50px;
   display: flex;
+  justify-content: center;
   gap: 58px;
   margin-bottom: 100px;
 }
@@ -257,11 +259,10 @@ nav ul li a {
 }
 
 .footer {
-  height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: start;
-  padding-top: 100px;
+  padding: 100px;
 }
 .footer-left {
   display: flex;
@@ -317,4 +318,25 @@ nav ul li a {
   text-decoration: none;
   color: #d4ede4;
   font-weight: normal;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vmin;
+}
+.about img {
+  height: 50vmin;
+}
+.about-text {
+  width: 40%;
+}
+.about-text h1 {
+  font-size: 64px;
+  text-align: start;
+  padding-bottom: 40px;
+}
+.about-text p {
+  text-align: start;
+  padding-bottom: 40px;
 }
